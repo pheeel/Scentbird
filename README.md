@@ -1,4 +1,7 @@
 # Overview
+
+[![Static CI Checks](https://github.com/pheeel/Scentbird/actions/workflows/ci.yml/badge.svg)](https://github.com/pheeel/Scentbird/actions/workflows/ci.yml)
+
 This is an E2E-testing framework based on [Playwright](https://playwright.dev/) and [Typescript](https://www.typescriptlang.org/). <br /><br />
 Features:
  - Configurable browsers (Chromium, Firefox, WebKit) via .env file
