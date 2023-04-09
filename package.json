@@ -1,0 +1,30 @@
+{
+  "name": "scentbird-tests",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "typescript": "3.9.5",
+    "@playwright/test": "1.32.2",
+    "@typescript-eslint/eslint-plugin": "5.57.1",
+    "@typescript-eslint/parser": "5.57.1",
+    "eslint-plugin-playwright": "0.12.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-airbnb-typescript": "17.0.0"
+  },
+  "dependencies": {
+    "playwright": "1.32.2",
+    "playwright-core": "1.32.2",
+    "dotenv": "16.0.3"
+  },
+  "scripts": {
+    "list:check": "eslint src",
+    "lint:fix": "eslint src --fix",
+    "lint:ci": "eslint src --quiet",
+    "tsc": "tsc",
+    "test:frontend-e2e:chromium": "playwright test src/tests/e2e/ --browser=chromium",
+    "test:frontend-e2e:safari": "playwright test src/tests/e2e/ --browser=webkit",
+    "test:frontend-e2e:firefox": "playwright test src/tests/e2e/ --browser=firefox",
+    "test:frontend-visual": "playwright test src/tests/visualRegression --browser=chromium",
+    "test:frontend-update-snapshots": "playwright test src/tests/visualRegression --update-snapshots --browser=chromium"
+  }
+}
